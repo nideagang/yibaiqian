@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - 外贸进出口公司</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部导航（和首页统一，保持网站一致性） -->
+    <header class="header">
+        <div class="container nav-wrap">
+            <!-- 修复：点击logo返回首页 -->
+            <div class="logo" onclick="location.href='index.html'" style="cursor: pointer;">YBQ | 外贸进出口</div>
+            <nav class="nav">
+                <a href="index.html">首页 Home</a>
+                <a href="about.html" class="active">关于我们 About</a>
+                <a href="products.html">产品 Products</a>
+                <a href="contact.html">联系我们 Contact</a>
+                <button class="quote-btn" onclick="window.location.href='contact.html'">Get Quote 立即询盘</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-padding"></div>
+    <section class="page-banner">
+        <div class="container">
+            <h1>About Us 关于我们</h1>
+            <p>Professional Import & Export Trading Enterprise</p>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="container">
+            <div class="section-title">企业简介 Company Profile</div>
+            <!-- ========== 这里自行填写公司介绍 ========== -->
+            <div class="about-text">
+                <p>作为拥有国企背书、集自主研发、规模化生产与进出口贸易于一体的出行产品企业，我们聚焦全场景个人出行一站式解决方案。公司支持 OEM 标准化代工、ODM 个性化深度研发、OBM 品牌联合运营三大合作模式，凭借自研技术优势、标准化产线与成熟外贸交付体系，为全球客商提供从方案设计、成品制造到跨境供货的全流程配套服务，可靠国企实力，助力客户打造差异化出行产品。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 【新增】企业宣传片模块，替换原发展历程+核心团队 -->
+    <section class="about-video-section" style="padding: 60px 0; background: #f8fbf9;">
+        <div class="container">
+            <div class="video-block" style="
+                position: relative;
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            ">
+                <!-- 宣传片背景图，把你那张地球图命名为 about-video-bg.jpg 放入根文件夹 -->
+                <div class="video-bg" style="
+                    width: 100%;
+                    height: 420px;
+                    background: url('about-video-bg.jpg') center center / cover no-repeat;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                ">
+                    <!-- 深色半透明遮罩 -->
+                    <div style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0,0,0,0.35);
+                    "></div>
+
+                    <!-- 播放按钮+文字 -->
+                    <div class="video-play-content" style="
+                        position: relative;
+                        z-index: 2;
+                        text-align: center;
+                        color: #fff;
+                    ">
+                        <div class="play-circle" style="
+                            width: 70px;
+                            height: 70px;
+                            border: 2px solid #fff;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 auto 15px;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        " onclick="document.getElementById('promoVideo').style.display='flex';">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <p style="font-size: 18px; letter-spacing: 1px; margin: 0;">Play video</p>
+                        <p style="font-size: 20px; margin-top: 8px; font-weight:500;">观看完整宣传片</p>
+                    </div>
+                </div>
+
+                <!-- 弹窗视频层 -->
+                <div id="promoVideo" style="
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.85);
+                    z-index: 9999;
+                    align-items: center;
+                    justify-content: center;
+                " onclick="this.style.display='none';">
+                    <div style="position: relative; width: 90%; max-width: 900px;" onclick="event.stopPropagation();">
+                        <video id="promoVideoPlayer" controls style="width: 100%; border-radius: 8px;">
+                            <source src="promo-video.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-info" style="
+                text-align: center;
+                margin-top: 25px;
+                color: #666;
+                font-size: 15px;
+                line-height: 1.8;
+            ">
+                <h3 style="color: #2d5c4c; margin-bottom: 10px; font-size:22px;">企业宣传片</h3>
+                <p>全方位展示公司研发实力、标准化生产基地、全系列出行产品与全球一站式外贸服务体系</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚和首页统一 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Trade Global Import & Export Co., Ltd. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

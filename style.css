@@ -1,0 +1,299 @@
+﻿/* 全局初始化 清新环境极简留白风格 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2d6a4f;
+    position: relative;
+}
+
+    .section-title::after {
+        content: "";
+        width: 60px;
+        height: 3px;
+        background-color: #40916c;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+    }
+
+/* 导航栏 */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 999;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+    .nav a {
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+    }
+
+        .nav a.active, .nav a:hover {
+            color: #40916c;
+        }
+
+.quote-btn {
+    padding: 8px 20px;
+    background-color: #40916c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .quote-btn:hover {
+        background-color: #2d6a4f;
+    }
+
+/* 首屏Banner */
+.banner {
+    margin-top: 70px;
+    height: 600px;
+    background: linear-gradient(rgba(45, 106, 79, 0.8), rgba(45, 106, 79, 0.8)), url('banner-bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.banner-btns {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.btn-white {
+    padding: 12px 30px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+    .btn-white:hover {
+        background-color: #fff;
+        color: #2d6a4f;
+    }
+
+.btn-green {
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #2d6a4f;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* 优势板块 */
+.advantage {
+    padding: 80px 0;
+    background-color: #f8fbf9;
+}
+
+.adv-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.adv-item .num {
+    font-size: 40px;
+    font-weight: bold;
+    color: #40916c;
+    margin-bottom: 10px;
+}
+
+/* 产品板块 */
+.product {
+    padding: 80px 0;
+}
+
+.pro-list {
+    display: flex;
+    gap: 30px;
+}
+
+.pro-card {
+    flex: 1;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+    .pro-card:hover {
+        box-shadow: 0 4px 15px rgba(64, 145, 108, 0.15);
+    }
+
+.pro-img {
+    height: 300px;
+    background-color: #f1f7f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.pro-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #40916c;
+    text-decoration: none;
+    border-bottom: 1px solid #40916c;
+}
+
+/* 资质板块 */
+.cert {
+    padding: 80px 0;
+    background-color: #f8fbf9;
+}
+
+.cert-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.cert-item {
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 联系板块 */
+.contact {
+    padding: 80px 0;
+    background: #f8fbf9;
+}
+
+/* 外层容器居中 */
+.contact-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 联系方式区块居中、控制宽度不拉伸太宽 */
+.contact-info {
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+    .contact-info p {
+        font-size: 17px;
+        margin: 24px 0;
+        color: #333;
+    }
+
+/* 下面表单相关样式全部删除，不需要了 */
+/*.contact-form、.submit-btn 整段删掉*/
+
+/* 页脚 */
+.footer {
+    padding: 30px 0;
+    background-color: #2d6a4f;
+    color: #fff;
+    text-align: center;
+}
+/* 多页面通用样式 */
+.page-padding {
+    height: 70px;
+}
+
+.page-banner {
+    background-color: #f8fbf9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+    .page-banner h1 {
+        font-size: 36px;
+        color: #2d6a4f;
+        margin-bottom: 10px;
+    }
+
+    .page-banner p {
+        color: #666;
+        font-size: 16px;
+    }
+
+.about-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.history-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+    .history-item span {
+        font-weight: bold;
+        color: #40916c;
+        font-size: 20px;
+        margin-right: 20px;
+    }
