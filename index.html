@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>临沂壹佰仟公司 </title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 产品栅格自适应均匀布局，可复制到style.css */
+        .pro-list {
+            display: grid;
+            /* 最小宽度320px，自动填充等分，均匀分布无留白 */
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .pro-img {
+            height: 260px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .pro-card {
+            border: 1px solid #eee;
+            padding: 16px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+            .pro-card:hover {
+                box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+                transform: translateY(-4px);
+            }
+
+            .pro-card h3 {
+                margin: 12px 0;
+                font-size: 18px;
+                color: #222;
+            }
+
+        .pro-link {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 16px;
+            background: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
     <!-- 顶部导航栏（跨页面跳转） -->
@@ -12,11 +55,11 @@
         <div class="container nav-wrap">
             <div class="logo">YBQ | 外贸进出口</div>
             <nav class="nav">
-                <a href=" " class="active">首页 Home</a>
-                <a href="about.html">关于我们 About</a>
-                <a href="products.html">产品 Products</a>
-                <a href="contact.html">联系我们 Contact</a>
-                <button class="quote-btn" onclick="window.location.href='contact.html'">Get Quote 立即询盘</button>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About us</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+
             </nav>
         </div>
     </header>
@@ -24,8 +67,8 @@
     <!-- 首屏Banner -->
     <section id="home" class="banner">
         <div class="container banner-content">
-            <h1>一站式全球进出口外贸服务商</h1>
-            <p>12年出口经验 | 全球30+国家合作 | OEM定制 | 清关物流一体化</p>
+            <h1>个人出行一站式服务</h1>
+            <p>国企背景 | 全球30+国家合作 | OEM定制 </p>
             <div class="banner-btns">
                 <a href="products.html" class="btn-white">查看产品</a>
                 <a href="contact.html" class="btn-green">联系我们</a>
@@ -46,8 +89,8 @@
                     <p>全球合作国家地区</p>
                 </div>
                 <div class="adv-item">
-                    <div class="num">ISO</div>
-                    <p>国际权威资质认证</p>
+                    <div class="num">100+</div>
+                    <p>售后服务站点</p>
                 </div>
                 <div class="adv-item">
                     <div class="num">24h</div>
@@ -57,28 +100,59 @@
         </div>
     </section>
 
-    <!-- 主营产品板块 -->
+    <!-- 主营产品板块：5款产品 自适应均匀分布 -->
     <section id="product" class="product">
         <div class="container">
             <div class="section-title">热销主营产品 Hot Products</div>
             <div class="pro-list">
+
+                <!-- 产品1 电动摩托车 -->
                 <div class="pro-card">
-                    <div class="pro-img"> <img src="wurenji.png" alt="航拍无人机" style="width:100%;height:100%;object-fit:cover;"></div>
-                    <h3>无人机</h3>
-                    <p>多种型号，支持批量定制</p>
-                    <a href="products.html" class="pro-link">Inquiry 询盘</a>
-                </div>
-                <div class="pro-card">
-                    <div class="pro-img"> <img src="电动摩托.png" alt="航拍无人机" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <div class="pro-img">
+                        <img src="电动摩托.png" alt="电动摩托车" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
                     <h3>电动摩托车</h3>
-                    <p>多种型号，支持批量定制</p>
-                    <a href="products.html" class="pro-link">Inquiry 询盘</a>
+                    <a href="products.html" class="pro-link">查看产品</a>
                 </div>
+                <!-- 产品2 电动三轮车 -->
                 <div class="pro-card">
-                    <div class="pro-img"> <img src="电动三轮.png" alt="航拍无人机" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <div class="pro-img">
+                        <img src="电动三轮.png" alt="电动三轮车" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
                     <h3>电动三轮车</h3>
-                    <p>多种型号，支持批量定制</p>
-                    <a href="products.html" class="pro-link">Inquiry 询盘</a>
+                    <a href="products.html" class="pro-link">查看产品</a>
+                </div>
+                <!-- 产品3 智能四足机器狗 -->
+                <div class="pro-card">
+                    <div class="pro-img">
+                        <img src="全地形机器狗X1.png" alt="机器狗" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <h3>机器狗</h3>
+                    <a href="products.html" class="pro-link">查看产品</a>
+                </div>
+                <!-- 产品4 航拍无人机 -->
+                <div class="pro-card">
+                    <div class="pro-img">
+                        <img src="wurenji.png" alt="航拍无人机" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <h3>航拍无人机</h3>
+                    <a href="products.html" class="pro-link">查看产品</a>
+                </div>
+                <!-- 产品5 农机 -->
+                <div class="pro-card">
+                    <div class="pro-img">
+                        <img src="大马力农用拖拉机.png" alt="农机" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <h3>农机</h3>
+                    <a href="products.html" class="pro-link">查看产品</a>
+                </div>
+                <!-- 产品6 消防车 -->
+                <div class="pro-card">
+                    <div class="pro-img">
+                        <img src="M型压缩空气泡沫消防车.png" alt="消防车" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <h3>消防车</h3>
+                    <a href="products.html" class="pro-link">查看产品</a>
                 </div>
             </div>
         </div>
@@ -90,8 +164,8 @@
             <div class="section-title">企业资质 Certifications</div>
             <div class="cert-list">
                 <div class="cert-item">海关进出口备案</div>
-                <div class="cert-item">ISO9001质量认证</div>
-                <div class="cert-item">CE欧盟认证</div>
+                <div class="cert-item">CCC质量认证</div>
+                <div class="cert-item">CE认证</div>
                 <div class="cert-item">企业信用评级证书</div>
             </div>
         </div>
@@ -104,18 +178,22 @@
             <div class="contact-wrap">
                 <div class="contact-info">
                     <!-- 固定你的企业信息，无占位文字 -->
-                    <p>📩 企业外贸邮箱：trade_global@xxx.com</p>
-                    <p>📞 WhatsApp：+86 138 XXXX XXXX</p>
-                    <p>📍 公司地址：山东省临沂市XX产业园区XX路XX号</p>
-                    <p>⏰ 商务对接时间：周一至周六 9:00-18:00</p>
-              
+                    <p>📩 企业外贸邮箱 E-mail：postmaster@yibaiqian.ltd</p>
+                    <p>📞 联系方式 Tel/whatsapp：151 9293 1319 or 182 6591 1387</p>
+                    <p>
+                        📍 公司地址 address：Room 509, Chuangye Building, Beiyuan Road,
+                        Lanshan District, Linyi City, Shandong Province
+                    </p>
+                    <p>⏰ 商务对接时间：Monday-Sunday 9:00-18:00</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <p>© 2026 Trade Global Import & Export Co., Ltd. All Rights Reserved</p>
+            <p>© 2026 Linyi Yibaiqian Trading Co.,Ltd. All Rights Reserved</p>
         </div>
     </footer>
 

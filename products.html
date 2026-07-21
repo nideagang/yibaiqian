@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - 外贸进出口公司</title>
+    <title>Products - 壹佰仟公司</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,11 +11,11 @@
         <div class="container nav-wrap">
             <div class="logo" onclick="location.href='index.html'" style="cursor: pointer;">YBQ | 外贸进出口</div>
             <nav class="nav">
-                <a href="index.html">首页 Home</a>
-                <a href="about.html">关于我们 About</a>
-                <a href="products.html" class="active">产品 Products</a>
-                <a href="contact.html">联系我们 Contact</a>
-                <button class="quote-btn" onclick="window.location.href='contact.html'">Get Quote 立即询盘</button>
+                <a href="index.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="contact.html">Contact</a>
+
             </nav>
         </div>
     </header>
@@ -28,25 +28,221 @@
         </div>
     </section>
 
-    <!-- 类目快速导航（点击跳转到对应分类） -->
+    <!-- 类目快速导航 分两行布局 -->
     <section style="padding:30px 0;background:#fff;border-bottom:1px solid #eee;">
-        <div class="container" style="display:flex;justify-content:center;gap:50px;flex-wrap:wrap;">
-            <a href="#drone" style="text-decoration:none;color:#40916c;font-size:18px;font-weight:bold;">无人机 Drone</a>
-            <a href="#scooter" style="text-decoration:none;color:#40916c;font-size:18px;font-weight:bold;">电动摩托 Electric Scooter</a>
-            <a href="#trike" style="text-decoration:none;color:#40916c;font-size:18px;font-weight:bold;">电动三轮车 Electric Trike</a>
+        <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:20px;">
+            <!-- 第一行：电动摩托、电动三轮车、农机 -->
+            <div style="display:flex;justify-content:center;gap:50px;flex-wrap:wrap;">
+                <a href="#scooter" style="text-decoration:none;color:#40916c;font-size:18px;font-weight:bold;">电动摩托 Electric Scooter</a>
+                <a href="#trike" style="text-decoration:none;color:#40916c;font-size:18px;font-weight:bold;">电动三轮车 Electric Trike</a>
+                <a href="#agri" style="text-decoration:none;color:#40916c;font-size:18px;font-weight:bold;">农机 Agricultural Machinery</a>
+            </div>
+            <!-- 第二行：无人机、机器狗、消防车 -->
+            <div style="display:flex;justify-content:center;gap:50px;flex-wrap:wrap;">
+                <a href="#drone" style="text-decoration:none;color:#40916c;font-size:18px;font-weight:bold;">无人机 Drone</a>
+                <a href="#robotdog" style="text-decoration:none;color:#40916c;font-size:18px;font-weight:bold;">机器狗 Robot Dog</a>
+                <a href="#firetruck" style="text-decoration:none;color:#40916c;font-size:18px;font-weight:bold;">消防车 Fire Truck</a>
+            </div>
         </div>
     </section>
 
     <section class="product-page" style="padding:60px 0;">
         <div class="container">
 
-            <!-- ========== 第一类：无人机 ========== -->
-            <div id="drone" class="category-section">
+            <!-- ========== 第一类：电动摩托 ========== -->
+            <div id="scooter" class="category-section">
+                <div class="section-title">电动摩托系列 Electric Scooter Series</div>
+                <div class="pro-list" style="display:flex;flex-wrap:wrap;gap:30px;">
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="金鹰.png" alt="Jinying Electric Scooter" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>金鹰</h3>
+                        <p>搭载48V350W无刷电机，6管智能控制器，最高时速35km/h，配备14*2.5真空胎，最大载重200kg，车身稳重，日常通勤耐用，包装尺寸130×35×65cm，适合城市短途代步与日常出行。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="酷战.png" alt="Kuzhan Electric Scooter" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>酷战</h3>
+                        <p>搭载48V350W无刷电机，6管智能控制器，最高时速40km/h，采用14*2.5真空胎，最大载重200kg，标配转向灯与液晶显示仪表，包装尺寸130×32×65cm，外观硬朗，适合日常通勤与短途出行。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="雪地外卖车.png" alt="Snow Food Delivery Electric Scooter" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>雪地外卖车</h3>
+                        <p>搭载48V800W高速电机，9管智能控制器，最高时速45km/h，采用16*4.0加宽真空胎，最大载重200kg，配备液晶显示仪表与前后碟刹，净重48kg，包装尺寸150×29×78cm，适合外卖配送、冬季通勤与复杂路面出行。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="双响炮.png" alt="Shuangxiangpao Electric Scooter" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>双响炮</h3>
+                        <p>搭载60V/72V500W无刷电机，9管智能控制器，最高时速45km/h，采用14*2.75真空胎，最大载重250kg，标配转向灯与液晶显示仪表，包装尺寸145×35×75cm，动力稳定，承载能力强，适合日常代步与短途配送。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="N1.png" alt="N1 Electric Scooter" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>N1</h3>
+                        <p>搭载48V/60V1000W无刷电机，12管智能控制器，最高时速65km/h，采用14*3.0真空胎，最大载重250kg，标配转向灯与液晶显示仪表，包装尺寸165×45×83cm，动力强劲，适合高速通勤与短途出行。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="B2.png" alt="B2 Electric Scooter" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>B2</h3>
+                        <p>搭载48V/60V1000W无刷电机，12管智能控制器，最高时速65km/h，采用14*3.0真空胎，最大载重250kg，标配转向灯与液晶显示仪表，包装尺寸165×45×83cm，外观简洁，动力表现突出，适合城市通勤。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="小海豚.png" alt="Little Dolphin Electric Scooter" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>小海豚</h3>
+                        <p>搭载24V250W电机，智能控制器，最高时速20km/h，配备8寸真空胎，最大载重100kg，车身支持可折叠设计，包装尺寸90×30×45cm，轻巧便携，适合短途代步、校园出行与家庭使用。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="代驾车.png" alt="Ride-Hailing Electric Bike" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>代驾车</h3>
+                        <p>搭载48V350W电机，智能控制器，最高时速40km/h，采用14*2.5真空胎，最大载重160kg，配备液晶仪表与高亮大灯，车身支持可折叠设计，适合代驾、短途代步与城市灵活出行。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="载重王.png" alt="Heavy Duty Electric Scooter" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>载重王</h3>
+                        <p>搭载72V1500W无刷电机，12管智能控制器，最高时速65km/h，采用14*3.0真空胎，最大载重400kg，标配LED大灯与前后碟刹，包装尺寸185×45×85cm，承载能力强，适合货运、配送、重载出行。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ========== 第二类：电动三轮车 ========== -->
+            <div id="trike" class="category-section" style="margin-top:80px;">
+                <div class="section-title">电动三轮车系列 Electric Trike Series</div>
+                <div class="pro-list" style="display:flex;flex-wrap:wrap;gap:30px;">
+
+
+
+                    <!-- Q5 电动三轮 -->
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="Q5.png" alt="Q5 Electric Trike" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>Q5</h3>
+                        <p>搭载60v1000W无刷电机，15管智能控制器，最高时速40km/h，3.0-8真空胎，最大载重500kg，搭配液晶仪表、透镜大灯，包装尺寸195×95×85cm，座舱空间宽敞，适合家庭多人出行、短途载客营运。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="双人载客三轮.png" alt="Dual Passenger Electric Tricycle" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>双人多功能载客电动三轮车</h3>
+                        <p>搭载600W高效无刷电机，支持48V/60V双电池系统，配备12管智能控制器；最高时速40km/h，续航50-70km（随电池配置变化），最大载重500kg。搭配3.0-8真空胎，行驶平稳；配备LCD液晶数字仪表、高亮透镜大灯，夜间骑行更安全。整车采用加厚钢制车架，坚固耐用，客货两用多功能设计，适用于家庭代步、乡镇短途载客、社区便民配送、景区观光等场景，支持海外批量采购定制。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="电动载货三轮.png" alt="ES29 Electric Motorcycle" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>货运三轮车</h3>
+                        <p>搭载1500W-3000W大功率无刷高速电机，配备72V可拆卸锂电池；标准充电6-8小时，快充仅需2-3小时。最高时速65km/h，满电续航100-150公里，爬坡能力≥25°，轴距1330mm，座高750mm，整车净重约110kg，最大载重150-200kg。动力充沛续航持久，爬坡载货表现优异，适合长途通勤、乡镇货运、海外市场批量出口。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="封闭式车厢货运三轮车.png" alt="EEC Enclosed Electric Cargo Tricycle" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>封闭式货运电动三轮车</h3>
+                        <p>整车通过EEC合规认证，搭载60V 1500W大功率无刷电机，配备50Ah大容量电池，满电续航可达100公里，最大载重500kg。封闭式双人座舱，自带自卸货斗设计，最高时速40km/h，爬坡能力15-20°；全车加厚钢制车架，坚固耐用使用寿命长。工厂直供，支持车身配色、车厢尺寸、电机功率等功能定制，适合城乡货运、果蔬配送、建材运输，海外市场批量出口。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="封闭式客运三轮.png" alt="4-Seat Fully Enclosed Passenger Tricycle" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>四座全封闭客运电动三轮车</h3>
+                        <p>整车尺寸2770×1150×1820mm，标准4人乘坐空间，搭载4.00-12耐磨城市道路轮胎，后桥集成电机驱动；动力系统可选60V/72V 1000W电机，搭配1200W控制器，标配4/5块12V120Ah铅酸电池。采用三联动刹车系统，前液压减震、后拖臂钢板弹簧减震，手动推拉玻璃门窗；可选配前轮碟刹、前制动手柄碟刹套件。全封闭一体座舱，防风防雨，驾乘舒适稳定，适合乡镇客运、乡村班车、景区载客，支持外贸批量出口。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="三轮房车.png" alt="N1 Electric Scooter" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>房车三轮车</h3>
+                        <p>搭载48V/60V 1000W无刷电机，12管智能控制器，最高时速65km/h，配备14*3.0加厚真空胎，最大载重250kg；标配LED转向灯、液晶数字仪表，前后双碟刹制动，带倒车档位、钥匙防盗报警系统、高亮LED大灯与刹车灯。整车标配可拆卸锂电池、普通快充充电器，包装尺寸165×45×83cm，动力强劲。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ========== 第三类：农机系列 ========== -->
+            <div id="agri" class="category-section" style="margin-top:80px;">
+                <div class="section-title">农机系列 Agricultural Machinery Series</div>
+                <div class="pro-list" style="display:flex;flex-wrap:wrap;gap:30px;">
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="大马力农用拖拉机.png" alt="TD1504 Farm Tractor" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>四轮驱动农用拖拉机</h3>
+                        <p> 搭载高性能可靠柴油发动机，扭矩输出强劲，动力输出稳定，燃油经济性出色；同步器变速箱换挡平顺，传动系统耐用，作业效率高。配备液压转向系统，转向灵活，长时间作业不易疲劳；人体工学操控布局，座舱空间宽敞视野优良。加厚重载车架承载能力强，抓地稳定，适配耕地、旋耕、播种、运输、植保喷洒等多种农田作业。整机水冷散热保障发动机长时间稳定工作，独立双作用离合器传动高效，预留多路液压输出接口可配套各类农机具，结构设计便于日常检修维护，大幅降低停机与维保成本，整机耐用可靠，适合国内外大中型农场批量采购。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="联合收割机.png" alt="Multi-Crop Combine Harvester" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>多功能谷物联合收割机</h3>
+                        <p>搭载成熟柴油发动机，动力强劲输出稳定，田间作业油耗经济；整机收割、脱粒、清选一体化作业，进料顺畅、脱粒高效，谷物损耗率低，收割成品干净无杂屑。人体工学封闭式驾驶室视野开阔，智能操控系统简单易上手；加厚加固车架与耐磨配件，适应旱地、水田多种复杂地块，小麦、玉米、水稻、大豆、高粱、油菜、葵花籽多作物通用，整机耐用故障率低，后期维护成本少，适合规模化农场批量收割作业，支持海外农机市场出口定制。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="小型拖拉机.png" alt="300/504 Series Small Farm Tractor" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <h3>小型农用四轮拖拉机</h3>
+                        <p>300/504系列拖拉机专为大棚管理、小型农田耕作、轻型农事作业打造，搭载高效柴油动力，传动系统运行稳定，安全性能优异，操作简单易上手，广泛适配菜园、果园、小型农场整地、播种、拉运等农事工作。300型号额定功率30马力，504型号额定功率50马力，两驱/四驱可选；整机自动化程度高，通用性强，可根据当地农田工况定制改装。整机单台重3吨，外廓尺寸330×140×210cm，支持海外农机市场出口定制。</p>
+                        <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ========== 第四类：无人机 ========== -->
+            <div id="drone" class="category-section" style="margin-top:80px;">
                 <div class="section-title">无人机系列 Drone Series</div>
                 <div class="pro-list" style="display:flex;flex-wrap:wrap;gap:30px;">
 
-                    <!-- 产品卡片模板：复制整段即可新增产品 ↓↓↓ -->
-                    <div class="pro-card" style="width:calc(33.33% - 20px);border:1px solid #eee;padding:20px;border-radius:6px;">
+                    <!-- 矛-3TC -->
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
                         <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
                             <img src="矛-3TC.png" alt="Drone Model A" style="width:100%;height:100%;object-fit:cover;">
                         </div>
@@ -54,9 +250,9 @@
                         <p>机身最轻、便携，双光 + 测距，两档长续航电池，无避障，适合短途野外定位巡查</p>
                         <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
                     </div>
-                    <!-- 产品卡片模板结束 ↑↑↑ -->
 
-                    <div class="pro-card" style="width:calc(33.33% - 20px);border:1px solid #eee;padding:20px;border-radius:6px;">
+                    <!-- 矛-3TX三光 -->
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
                         <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
                             <img src="矛-3TX（三光）.png" alt="Drone Model B" style="width:100%;height:100%;object-fit:cover;">
                         </div>
@@ -65,7 +261,8 @@
                         <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
                     </div>
 
-                    <div class="pro-card" style="width:calc(33.33% - 20px);border:1px solid #eee;padding:20px;border-radius:6px;">
+                    <!-- 矛-3TX四光 -->
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
                         <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
                             <img src="矛-3TX（四光）.png" alt="Drone Model C" style="width:100%;height:100%;object-fit:cover;">
                         </div>
@@ -77,73 +274,73 @@
                 </div>
             </div>
 
-            <!-- ========== 第二类：电动摩托 ========== -->
-            <div id="scooter" class="category-section" style="margin-top:80px;">
-                <div class="section-title">电动摩托系列 Electric Scooter Series</div>
+            <!-- ========== 第五类：智能机器狗系列 ========== -->
+            <div id="robotdog" class="category-section" style="margin-top:80px;">
+                <div class="section-title">智能机器狗系列 Robot Dog Series</div>
                 <div class="pro-list" style="display:flex;flex-wrap:wrap;gap:30px;">
 
-                    <div class="pro-card" style="width:calc(33.33% - 20px);border:1px solid #eee;padding:20px;border-radius:6px;">
-                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
-                            <img src="赛虎.png" alt="Electric Scooter Model A" style="width:100%;height:100%;object-fit:cover;">
+                    <!-- 军用侦察四足机器狗 -->
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:240px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="全地形机器狗X1.png" alt="AllTerrain X1 Quadruped Robot Dog" style="width:100%;height:100%;object-fit:cover;">
                         </div>
-                        <h3>赛虎</h3>
-                        <p>赛虎电动两轮车配备 48V350W 无刷电机与 6 管智能控制器，最高时速 40km/h，搭载 14*2.5 规格真空胎，最大载重 200kg，全车标配转向灯与液晶显示仪表，包装尺寸为 130×32×65cm，车身小巧轻便，适合日常短途代步使用。</p>
+                        <h3>全地形机器狗 X1</h3>
+                        <p>12自由度四足结构，最大越障50cm，IP67全防水防护；整机35-40kg，空载续航5小时，可承载25kg任务载荷，搭载双激光雷达自主环境感知，适应-20℃~55℃宽温环境，适用于野外搜救、边境侦察、厂区特种巡检、应急救援等场景，支持海外批量出口与功能定制。</p>
                         <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
                     </div>
 
-                    <div class="pro-card" style="width:calc(33.33% - 20px);border:1px solid #eee;padding:20px;border-radius:6px;">
-                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
-                            <img src="战鹰.png" alt="Electric Scooter Model B" style="width:100%;height:100%;object-fit:cover;">
+                    <!-- 轮腿复合巡检机器狗 -->
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:240px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="轮式机器狗S1.png" alt="Wheeled Robot Dog S1" style="width:100%;height:100%;object-fit:cover;">
                         </div>
-                        <h3>战鹰</h3>
-                        <p>战鹰电动两轮车搭载 60V800W 无刷电机以及 9 管智能控制器，最高行驶时速可达 45km/h，采用 14*2.75 加宽真空胎，最大载重 250kg，标配转向灯和液晶仪表，包装尺寸 145×35×75cm，动力更强、承载能力突出，能够满足重载与长距离骑行需求。</p>
+                        <h3>轮式机器狗 S1</h3>
+                        <p>轮式行走，IP66防护；集成600MHz-6GHz全频段无人机侦测与诱骗反制模块，侦测距离最远1.5km，干扰响应低于10秒；整机仅710g轻量化机身，续航4小时，可快速更换电池，适配电站、园区安防巡检、低空无人机管控，外贸出口配套全套控制软件。</p>
                         <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
                     </div>
 
-                    <div class="pro-card" style="width:calc(33.33% - 20px);border:1px solid #eee;padding:20px;border-radius:6px;">
-                        <div class="pro-img" style="height:220px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
-                            <img src="R3.png" alt="Electric Scooter Model C" style="width:100%;height:100%;object-fit:cover;">
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
+                        <div class="pro-img" style="height:240px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
+                            <img src="X30Pro机器狗.png" alt="X30 Pro Industrial Quadruped Robot Dog" style="width:100%;height:100%;object-fit:cover;">
                         </div>
-                        <h3>R3</h3>
-                        <p>R3 电动两轮车，采用 60V800W 无刷电机搭配 9 管智能控制器，最高时速 45km/h，装配 14*2.75 真空胎，最大载重 250kg，标配转向灯与液晶显示仪表，包装尺寸 145×35×75cm</p>
+                        <h3>X30 Pro 工业四足机器狗</h3>
+                        <p>整机59kg，尺寸1000*585*470mm，有效负载≥20kg，IP67防护，-20℃~55℃宽温工作，续航2.5~4小时，最大爬坡45°。搭载多传感器融合建图/定位/导航算法，内置RTK高精度定位模块，工业航插支持12V/24V供电，支持二次开发，适配厂区巡检、矿山勘探、应急搜救、消防侦察、边境安防等特种作业场景，支持海外批量定制出口。</p>
                         <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
                     </div>
-
                 </div>
             </div>
 
-            <!-- ========== 第三类：电动三轮车 ========== -->
-            <div id="trike" class="category-section" style="margin-top:80px;">
-                <div class="section-title">电动三轮车系列 Electric Trike Series</div>
+            <!-- ========== 第六类：消防车系列 ========== -->
+            <div id="firetruck" class="category-section" style="margin-top:80px;">
+                <div class="section-title">消防车系列 Fire Truck Series</div>
                 <div class="pro-list" style="display:flex;flex-wrap:wrap;gap:30px;">
 
-                    <div class="pro-card" style="width:calc(33.33% - 20px);border:1px solid #eee;padding:20px;border-radius:6px;">
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
                         <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
-                            <img src="电动三轮.png" alt="Electric Trike Model A" style="width:100%;height:100%;object-fit:cover;">
+                            <img src="CC型消防车.png" alt="LLX5036TXFQC20/CC Pickup Rescue Fire Truck" style="width:100%;height:100%;object-fit:cover;">
                         </div>
-                        <h3>电动三轮</h3>
-                        <p>电动三轮</p>
+                        <h3>CC型器械消防车</h3>
+                        <p>采用CC皮卡底盘改装，双排5人乘坐空间，车头标配电动绞盘，后置模块化器材箱，可搭载全套消防救援器材。整车越野通过性强、机动灵活、突击速度快，适配乡村、厂区、山林等窄路应急抢险；底盘3C认证，国六排放标准，整车消防性能满足GB7956国标，支持外贸批量定制出口。</p>
                         <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
                     </div>
 
-                    <div class="pro-card" style="width:calc(33.33% - 20px);border:1px solid #eee;padding:20px;border-radius:6px;">
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
                         <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
-                            <img src="旅行房车.png" alt="Electric Trike Model B" style="width:100%;height:100%;object-fit:cover;">
+                            <img src="水雾消防车.png" alt="LLX5046GXFPW0.6/BJ Off-Road Water Mist Fire Truck" style="width:100%;height:100%;object-fit:cover;">
                         </div>
-                        <h3>旅行房车</h3>
-                        <p>产品参数、载重、续航、出口认证【自行填写】</p>
+                        <h3>水雾消防车</h3>
+                        <p>采用四驱越野底盘，搭载玉柴国六发动机，单排2人驾驶室；不锈钢水罐载水1000kg，配备高压水雾灭火系统、高压卷盘水雾枪与前置救援绞盘，喷雾流量0.6L/s。四驱强越野性能，适配林区、乡村窄路、山地火情扑救，整车符合GB7956消防国标，底盘3C认证，支持海外森林消防批量采购与定制改装。</p>
                         <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
                     </div>
 
-                    <div class="pro-card" style="width:calc(33.33% - 20px);border:1px solid #eee;padding:20px;border-radius:6px;">
+                    <div class="pro-card" style="flex: 0 0 calc(33.33% - 20px);max-width:calc(33.33% - 20px);box-sizing:border-box;border:1px solid #eee;padding:20px;border-radius:6px;">
                         <div class="pro-img" style="height:280px;overflow:hidden;margin-bottom:15px;border-radius:4px;">
-                            <img src="电动载货三轮.png" alt="Electric Trike Model C" style="width:100%;height:100%;object-fit:cover;">
+                            <img src="L型消防车.png" alt="LLX5106GXFGS35/L Water Tank Fire Truck" style="width:100%;height:100%;object-fit:cover;">
                         </div>
-                        <h3>电动载货三轮</h3>
-                        <p>产品参数、载重、续航、出口认证【自行填写】</p>
+                        <h3>LLX5106GXFGS35/L 型水罐消防车</h3>
+                        <p>采用庆铃QL1110ANJAY二类底盘改装，双排6人驾驶室，搭载3500L不锈钢水罐，配置CB10/40-RS消防泵与PS8/40W消防水炮，具备载水量大、供水稳定、操作集中、维护简便等特点，适用于城市消防站、厂区防火、乡镇消防及道路应急灭火。底盘3C认证，发动机国六排放，整车消防性能符合GB7956标准。</p>
                         <a href="contact.html" class="pro-link" style="display:inline-block;margin-top:15px;color:#40916c;text-decoration:none;border-bottom:1px solid #40916c;">Inquiry 立即询盘</a>
                     </div>
-
                 </div>
             </div>
 
@@ -152,7 +349,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>© 2026 Trade Global Import & Export Co., Ltd. All Rights Reserved</p>
+            <p>© 2026 Linyi Yibaiqian Trading Co.,Ltd. All Rights Reserved</p>
         </div>
     </footer>
 
